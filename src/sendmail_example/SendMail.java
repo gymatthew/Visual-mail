@@ -1,4 +1,4 @@
-package sendmail;
+package sendmail_example;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -32,7 +32,7 @@ public class SendMail {
 	private static final Log log = LogFactory.getLog(SendMail.class);
 
 	// 配置文件xml的路径
-	private final static String XML_PATH = "src" + File.separator + "sendmail"
+	private final static String XML_PATH = "src" + File.separator + "sendmail_example"
 			+ File.separator + "SendMail.xml";
 
 	// xml文件中字段对应的javabean对象
@@ -188,7 +188,7 @@ public class SendMail {
 
 		// 传入props、myauth对象,构造邮件授权的session对象
 		Session session = Session.getDefaultInstance(props, myauth);
-		
+
 		// 将Session对象作为MimeMessage构造方法的参数传入构造message对象
 		MimeMessage message = new MimeMessage(session);
 		try {
@@ -272,7 +272,7 @@ public class SendMail {
 		String type = "logmessage";
 
 		// 邮件的内容,实际开发中这个内容是前台传到后台
-		String content = "你好，欢饮使用JavaMail包开发邮件功能";
+		String content = "你好，十分 欢迎使用JavaMail包开发邮件功能";
 
 		// 在其他类中调用时只能看到sendMail方法,为了保护内部细节,其它的方法都声明为私有的
 		mail.sendMail(type, content);

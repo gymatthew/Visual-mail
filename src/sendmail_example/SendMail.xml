@@ -5,7 +5,7 @@
          <from>visualmail@126.com</from><!-- 发件人 ,必填项 -->
          <to>gy.matthew@gmail.com</to><!-- 收件人,多个收件人之间用英文状态下的逗号隔开,必填项 -->
          <cc>visualmail@126.com</cc><!-- 抄送,多个抄送人之间用英文状态下的逗号隔开-->
-         <title>test JavaMail</title><!-- 邮件主题-->
+         <title>test JavaMail in 29</title><!-- 邮件主题-->
          <username>visualmail@126.com</username><!-- 发件人邮箱的用户名,即email的全地址,必填项 -->
          <password>123457</password><!-- 发件人邮箱的密码,像QQ邮箱如果设置了独立密码应输入独立密码,必填项,为了安全起见填写密码之前最好用Encrypt类的DoEncrypt方法加密 -->
      </logmessage>

@@ -1,4 +1,4 @@
-package sendmail;
+package sendmail_example;
  
  /**
   * Module:      Encrypt.java 
