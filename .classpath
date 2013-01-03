@@ -2,11 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/paper/jar/jaf-1_1_1/jaf-1.1.1/activation.jar"/>
-	<classpathentry kind="lib" path="D:/paper/jar/javamail-1[1].4.2/javamail-1.4.2/mail.jar"/>
-	<classpathentry kind="lib" path="D:/paper/jar/commons-logging.jar"/>
-	<classpathentry kind="lib" path="D:/paper/jar/log4j.jar"/>
-	<classpathentry kind="lib" path="D:/paper/jar/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="D:/paper/jar/jaxen-1.1-beta-6.jar"/>
+	<classpathentry kind="lib" path="D:/paper/code/used_jar/activation.jar"/>
+	<classpathentry kind="lib" path="D:/paper/code/used_jar/commons-logging.jar"/>
+	<classpathentry kind="lib" path="D:/paper/code/used_jar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/paper/code/used_jar/jaxen-1.1-beta-6.jar"/>
+	<classpathentry kind="lib" path="D:/paper/code/used_jar/log4j.jar"/>
+	<classpathentry kind="lib" path="D:/paper/code/used_jar/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
