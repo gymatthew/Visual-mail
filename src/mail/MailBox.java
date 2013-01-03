@@ -22,6 +22,16 @@ public class MailBox {
 
 	public final static String INBOX = "INBOX";
 	public final static String OUTBOX = "OUTBOX";
+	
+	public static MailBox instance = new MailBox();
+	
+	private MailBox() {
+		
+	}
+	
+	public static MailBox getInstance() {
+		return instance;
+	}
 
 	public ArrayList<MailInfo> ReadMail(final String type) {
 
@@ -38,8 +48,8 @@ public class MailBox {
 		ArrayList<MailInfo> mailList = new ArrayList<MailInfo>();
 
 		try {
-			Store store = session.getStore("pop3");
-			store.connect("pop3.126.com", UserInfo.getInstance().getUserName(),
+			Store store = session.getStore(UserInfo.getInstance().getProtocol());
+			store.connect(UserInfo.getInstance().getHost(), UserInfo.getInstance().getUserName(),
 					UserInfo.getInstance().getPassword());
 
 			// 获取邮件服务器的收件箱
