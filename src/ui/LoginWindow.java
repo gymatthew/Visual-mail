@@ -24,8 +24,6 @@ public class LoginWindow extends JFrame {
 	private final static int GAP = 5;
 	private final static int WIDTH = 300;
 	private final static int HEIGHT = 250;
-	private final static int LOCATION_X = 500;
-	private final static int LOCATION_Y = 300;
 
 	protected JPanel main_panel;
 	protected JPanel button_panel;
@@ -83,7 +81,7 @@ public class LoginWindow extends JFrame {
 		this.setVisible(true);
 		this.setSize(WIDTH, HEIGHT);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setLocation(LOCATION_X, LOCATION_Y);
+		this.setLocationRelativeTo(getOwner());
 	}
 
 	protected void accountLogin() {
@@ -95,7 +93,7 @@ public class LoginWindow extends JFrame {
 			JOptionPane.showMessageDialog(null, "Email or password is incorrect!",
 					"error", JOptionPane.ERROR_MESSAGE);
 		} else {
-			new ContentWindow(mailInfoList);
+			new MainWindow(mailInfoList);
 			dispose();
 		}
 	}
